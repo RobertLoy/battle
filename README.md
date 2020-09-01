@@ -20,7 +20,7 @@ GCU's Java 16-week program teaches students everything from the foundational und
 4. Click "Next"
 5. Click "Clone URI"
 6. Click "Next"
-7. Paste in the URI from GitHub (https://github.com/RobertLoy/battle/)
+7. Paste in the URI from GitHub (https://github.com/RobertLoy/battle.git)
 8. Click "Next"
 9. Click "Next"
 10. Update the Directory where to install. Recommend to install in the eclipse-workspace in the appropriate workspace.
@@ -34,4 +34,4 @@ GCU's Java 16-week program teaches students everything from the foundational und
 
 ## For more information on GCU's Java Certificate
 Java Programming Certificate
-[https://www.gcu.edu/degree-programs/java-programming-certificate]
+(https://www.gcu.edu/degree-programs/java-programming-certificate)
