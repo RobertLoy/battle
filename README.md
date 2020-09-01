@@ -2,7 +2,7 @@
 ## Initial GitHub Exercise
 GCU's Java 16-week program teaches students everything from the foundational understanding of the OOP language and takes them on a journey to advanced Full-Stack Java and React programs. This exercise is early in the program and shares the importace of code versions and collaboration. The code will be refactored and enhanced as new ideas and concepts are introduced.
 
-![Image of battle application](battle-screenshot.png)
+![Image of battle application](battle-screenshot.png| width=400 )
 
 ## Concepts
 - Static methods
