@@ -13,6 +13,25 @@ GCU's Java 16-week program teaches students everything from the foundational und
 - Version control (git/GitHub)
 - Collaboration
 
+## Installation Instruction (Eclipse)
+1. Open Eclipse
+2. Click "File > Import"
+3. Select "Git > Projects from Git"
+4. Click "Next"
+5. Click "Clone URI"
+6. Click "Next"
+7. Paste in the URI from GitHub (https://github.com/RobertLoy/battle/)
+8. Click "Next"
+9. Click "Next"
+10. Update the Directory where to install. Recommend to install in the eclipse-workspace in the appropriate workspace.
+11. Click "Next"
+12. Pick "Import using New Project Wizard"
+13. Click "Finish"
+14. Pick "Java Project"
+15. Click "Next"
+16. Give the project a name (e.g. "battle)
+17. Click "Finish"
+
 ## For more information on GCU's Java Certificate
 Java Programming Certificate
 [https://www.gcu.edu/degree-programs/java-programming-certificate]
