@@ -15,6 +15,12 @@ GCU's Java 16-week program teaches students everything from the foundational und
 - Version control (git/GitHub)
 - Collaboration
 
+## Installation Instruction (IntelliJ)
+1. Open IntelliJ
+2. Select "Get from Version Control"
+3. Paste in the URI from GitHub (https://github.com/RobertLoy/battle.git)
+4. Click "Finish"
+
 ## Installation Instruction (Eclipse)
 1. Open Eclipse
 2. Click "File > Import"
