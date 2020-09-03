@@ -1,4 +1,6 @@
 # Grand Canyon University Java Certificate Program
+# Battle Arena Exercise
+
 ## Initial GitHub Exercise
 GCU's Java 16-week program teaches students everything from the foundational understanding of the OOP language and takes them on a journey to advanced Full-Stack Java and React programs. This exercise is early in the program and shares the importance of code versions and collaboration. The code will be refactored and enhanced as new ideas and concepts are introduced.
 
