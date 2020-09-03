@@ -1,6 +1,10 @@
 # Grand Canyon University Java Certificate Program
 ## Initial GitHub Exercise
-GCU's Java 16-week program teaches students everything from the foundational understanding of the OOP language and takes them on a journey to advanced Full-Stack Java and React programs. This exercise is early in the program and shares the importace of code versions and collaboration. The code will be refactored and enhanced as new ideas and concepts are introduced.
+GCU's Java 16-week program teaches students everything from the foundational understanding of the OOP language and takes them on a journey to advanced Full-Stack Java and React programs. This exercise is early in the program and shares the importance of code versions and collaboration. The code will be refactored and enhanced as new ideas and concepts are introduced.
+
+This program and code can be used to grow your programming experience.  The code has the foundation to allow you to experiment with more advanced Java ideas.  Don't worry if you screw something up because you can make a new pull request and get the original code back. To further advance your marketable software development skills, fork the repository, and then create your enhancements locally.  Once you are satisfied, push then to your forked version and create your baseline code.
+
+For a list of possible enhancements, scroll down to "Possible Enhancements."
 
 ![Image of battle application](battle-screenshot.png)
 
@@ -24,7 +28,7 @@ GCU's Java 16-week program teaches students everything from the foundational und
 ## Installation Instruction (Eclipse)
 1. Open Eclipse
 2. Click "File > Import"
-3. Select "Git > Projects from Git"
+3. Select "Git > Projects from Git (with smart import)"
 4. Click "Next"
 5. Click "Clone URI"
 6. Click "Next"
@@ -33,12 +37,16 @@ GCU's Java 16-week program teaches students everything from the foundational und
 9. Click "Next"
 10. Update the Directory where to install. Recommend to install in the eclipse-workspace in the appropriate workspace.
 11. Click "Next"
-12. Pick "Import using New Project Wizard"
-13. Click "Finish"
-14. Pick "Java Project"
-15. Click "Next"
-16. Give the project a name (e.g. "battle)
-17. Click "Finish"
+12. Click "Finish"
+
+## Possible Enhancements
+
+### Basic
+1. Display the character's total points before the fight starts.
+2. More coming soon!
+
+### Medium 
+- Coming Soon!
 
 ## For more information on GCU's Java Certificate
 Java Programming Certificate
