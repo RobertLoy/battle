@@ -68,25 +68,25 @@ For a list of possible enhancements, scroll down to "Possible Enhancements."
 - Let the user name the monsters.
 - Create a Battle class and move the battle() method to that new class.
 - The countdown for battle start at 10 and countdown. Don't say "0", stop at "1".
-- _ More coming soon! (submit your suggestions) _
+- _More coming soon! (submit your suggestions)
 
 ### Medium 
 - Create a method on Monster that checks to see if it is alive and use that functionality instead of the code in the battle method().
 - Encapsulate the Monster attributes of "name" and "hp" so the attributes cannot be accessed directly from other classes.
 - Create an inheritance environment by adding a class called Hero and make a parent of both classes called Character. Add the appropriate attributes to each class.
-- _ More coming soon! (submit your suggestions) _
+- _More coming soon! (submit your suggestions)
 
 ### Hard
 - Using polymorphism add an attack() to the Monster, Hero, and Character classes with different messages for each class.
 - Make Character class abstract and fix any code issues.
 - Deploy the appropriate constructors for all the classes, and for at least the Monster, Hero, and Character classes.
-- _ More coming soon! (submit your suggestions) _ 
+- _More coming soon! (submit your suggestions)
 
 ### Expert
 - Create an array or arraylist of characters, and then create a menu of the characters from which the user can pick to battle.
 - Allow the Monster and Hero to pick between battle() and heal(), with heal adding hp to the character instead of subtracting from the other character.
 - Add unique methods for Monster called finishMove() that does 2x the normal damage and blessing() for Hero that does 2x heal.  Add those menu option to the monster actions,
-- _ More coming soon! (submit your suggestions) _
+- _More coming soon! (submit your suggestions)
 
 ## For more information on GCU's Java Certificate
 Java Programming Certificate
