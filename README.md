@@ -19,7 +19,23 @@ For a list of possible enhancements, scroll down to "Possible Enhancements."
 - Version control (git/GitHub)
 - Collaboration
 
-## Installation Instruction (IntelliJ)
+## Installation Instruction '
+
+### (Eclipse)
+1. Open Eclipse
+2. Click "File > Import"
+3. Select "Git > Projects from Git (with smart import)"
+4. Click "Next"
+5. Click "Clone URI"
+6. Click "Next"
+7. Paste in the URI from GitHub (https://github.com/RobertLoy/battle.git)
+8. Click "Next"
+9. Click "Next"
+10. Update the Directory where to install. Recommend to install in the eclipse-workspace in the appropriate workspace.
+11. Click "Next"
+12. Click "Finish"
+
+###  (IntelliJ)
 1. Open IntelliJ
 2. Select "Get from Version Control"
 3. Paste in the URI from GitHub (https://github.com/RobertLoy/battle.git)
@@ -38,6 +54,12 @@ For a list of possible enhancements, scroll down to "Possible Enhancements."
 10. Update the Directory where to install. Recommend to install in the eclipse-workspace in the appropriate workspace.
 11. Click "Next"
 12. Click "Finish"
+
+###  (git / command line)
+1. Chose your OS's appropriate command line interface (CommandWindow on Windows, Terminal on MacOS).
+2. Navigate to a folder where you want to clone the repository.
+3. Type "git clone https://github.com/RobertLoy/battle.git"
+4. You will than have to import or open the files in your favorite text editor.
 
 ## Possible Enhancements
 
