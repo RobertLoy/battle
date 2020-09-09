@@ -4,6 +4,15 @@ public class Attack {
 	private String typeOfAttack;
 	private String whereAttacked;
 
+	public Attack(String typeOfAttack, String whereAttacked) {
+		super();
+		this.typeOfAttack = typeOfAttack;
+		this.whereAttacked = whereAttacked;
+		
+	}
+	public Attack() {
+	}
+
 	public String getTypeOfAttack() {
 		return typeOfAttack;
 	}
@@ -22,6 +31,7 @@ public class Attack {
 
 	@Override
 	public String toString() {
-		return "Attack [typeOfAttack=" + typeOfAttack + ", whereAttacked=" + whereAttacked + "]";
+		return " used " + whereAttacked + " " + typeOfAttack;
 	}
+
 }

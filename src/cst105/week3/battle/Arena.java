@@ -38,7 +38,7 @@ public class Arena {
 	public static void endScreen() {
 		
 		System.out.println("=======================");
-		System.out.println("We have our WINNER!");
+		System.out.println("Game is Over!");
 		System.out.println("=======================");
 		System.out.println(""); // print empty line
 		

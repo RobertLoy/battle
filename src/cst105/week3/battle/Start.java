@@ -1,9 +1,13 @@
 package cst105.week3.battle;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Scanner;
 
 public class Start {
 	
+	static ArrayList <Attack> attacks = new ArrayList<>(); 
+
 	static Scanner sc = new Scanner(System.in);
 
 	// Hopefully this "special" method is sinking in!
@@ -26,6 +30,14 @@ public class Start {
 		// These are NOT static so we need objects created
 		System.out.println("Enter a monsters name to enter the battle, or enter X to have one generated for you");
 		String answer1 = sc.nextLine();
+		attacks.add(new Attack("kick", "chest"));
+		attacks.add(new Attack("punch", "face"));
+		attacks.add(new Attack("round house", "chest"));
+		attacks.add(new Attack("kick", "arm"));
+		attacks.add(new Attack("punch", "chest"));
+		attacks.add(new Attack("round house", "face"));		
+		attacks.add(new Attack("sweep", "leg"));
+		
 		Monster m1 = new Monster(null, 0);
 		Monster m2 = new Monster(null, 0);
 		
@@ -61,6 +73,10 @@ public class Start {
 		// Notice the () grouping
 		m2.setHp((int) (Math.random() * 100) + 500);
 
+		//printout HP levels
+		System.out.println("\nPlayer Name:" + m1.getName() + ", Player HP:" + m1.getHp());
+		System.out.println("Player Name:" + m2.getName() + ", Player HP:" + m2.getHp() + "\n");
+		
 		// To keep track of rounds we need counter
 		int round = 1;
 
@@ -79,6 +95,8 @@ public class Start {
 			// Also need to convert the double to an int
 			// Notice the () grouping
 			int dmg1 = (int) (Math.random() * 100);
+			int attackRand1 = (int) (Math.random() * 3);
+			System.out.println(m1.getName() + attacks.get(attackRand1));
 			System.out.println(m1.getName() + " does " + dmg1);
 			// Subtract the damage from m2
 			m2.setHp(m2.getHp() - dmg1);
@@ -87,6 +105,8 @@ public class Start {
 			// Lets get how much damage
 			// Also need to convert the double to an int
 			// Notice the () grouping
+			int attackRand2 = (int) (Math.random() * 3);
+			System.out.println(m2.getName() + attacks.get(attackRand2));
 			int dmg2 = (int) (Math.random() * 100);
 			System.out.println(m2.getName() + " does " + dmg2);
 			// Subtract the damage from m2
@@ -103,11 +123,16 @@ public class Start {
 
 		// Print out the winner
 		// It is possible BOTH monsters died in the last round
-		// so we need to check who is alive.
-		if (m1.getHp() > 0)
+		// so we need to check who is alive.		
+		if (m1.getHp() > 0) {
 			System.out.println(m1.getName() + " WINS!");
-		else if (m2.getHp() > 0)
+		}
+		
+		else if (m2.getHp() > 0){
 			System.out.println(m2.getName() + " WINS!");
+			}
+
+		
 		else
 			System.out.println("Both monsters died in battle!");
 	}
