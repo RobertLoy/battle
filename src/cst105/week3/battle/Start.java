@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class Start {
 	
+	//Munoz: to hold the type of attacks done in each round that cause HP damage
 	static ArrayList <Attack> attacks = new ArrayList<>(); 
 
 	static Scanner sc = new Scanner(System.in);
@@ -28,8 +29,11 @@ public class Start {
 	public static void battle() {
 		// We need Monsters to battle
 		// These are NOT static so we need objects created
+		
+		//Munoz: added monster naming capabilities
 		System.out.println("Enter a monsters name to enter the battle, or enter X to have one generated for you");
 		String answer1 = sc.nextLine();
+		//Munoz: adding attacks to the arraylist
 		attacks.add(new Attack("kick", "chest"));
 		attacks.add(new Attack("punch", "face"));
 		attacks.add(new Attack("round house", "chest"));
@@ -38,9 +42,11 @@ public class Start {
 		attacks.add(new Attack("round house", "face"));		
 		attacks.add(new Attack("sweep", "leg"));
 		
+		//Munoz: created objects that are yet to be filled 
 		Monster m1 = new Monster(null, 0);
 		Monster m2 = new Monster(null, 0);
 		
+		//Munoz: if else -- depends on whether the user wants to name monsters or not
 		if(answer1.contentEquals("X")|| answer1.contentEquals("x")) {
 			m1.setName("Godzilla");
 		}
@@ -96,8 +102,8 @@ public class Start {
 			// Notice the () grouping
 			int dmg1 = (int) (Math.random() * 100);
 			int attackRand1 = (int) (Math.random() * 3);
-			System.out.println(m1.getName() + attacks.get(attackRand1));
-			System.out.println(m1.getName() + " does " + dmg1);
+					//System.out.println(m1.getName() + attacks.get(attackRand1));
+			System.out.println(m1.getName() + " does " + attacks.get(attackRand1) + " and does " + dmg1 + " points of damage");
 			// Subtract the damage from m2
 			m2.setHp(m2.getHp() - dmg1);
 
@@ -106,9 +112,9 @@ public class Start {
 			// Also need to convert the double to an int
 			// Notice the () grouping
 			int attackRand2 = (int) (Math.random() * 3);
-			System.out.println(m2.getName() + attacks.get(attackRand2));
+					//System.out.println(m2.getName() + attacks.get(attackRand2));
 			int dmg2 = (int) (Math.random() * 100);
-			System.out.println(m2.getName() + " does " + dmg2);
+			System.out.println(m2.getName() + " does " + attacks.get(attackRand2) + " and does " + dmg2 + " points of damage");
 			// Subtract the damage from m2
 			m1.setHp(m1.getHp() - dmg2);
 

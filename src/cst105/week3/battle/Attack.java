@@ -31,7 +31,7 @@ public class Attack {
 
 	@Override
 	public String toString() {
-		return " used " + whereAttacked + " " + typeOfAttack;
+		return whereAttacked + " " + typeOfAttack;
 	}
 
 }
