@@ -9,8 +9,7 @@ public class Arena {
 		
 		System.out.println("=======================");
 		System.out.println("WELCOME TO TODAY'S MAIN EVENT!");
-		System.out.println("=======================");
-		System.out.println("");  // print empty line
+		System.out.println("=======================\n");
 	}
 	
 	// This is static so no need to create object before calling it
@@ -28,8 +27,7 @@ public class Arena {
 		}
 		
 		// end the countdown line and move the cursor to next line
-		System.out.println(" BATTLE!");
-		System.out.println("");   // print empty line
+		System.out.println(" BATTLE!\n");
 	}
 	
 	// This is static so no need to create object before calling it
@@ -38,9 +36,8 @@ public class Arena {
 	public static void endScreen() {
 		
 		System.out.println("=======================");
-		System.out.println("We have our WINNER!");
-		System.out.println("=======================");
-		System.out.println(""); // print empty line
+		System.out.println("We have a winner!");
+		System.out.println("=======================\n");
 		
 	}
 }
