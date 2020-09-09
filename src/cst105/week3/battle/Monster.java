@@ -1,7 +1,8 @@
 package cst105.week3.battle;
 
 public class Monster {
-
+	//Munoz: Added encapsulation to this class
+	
 	// Class level Attributes
 	private String name;
 	private int hp;

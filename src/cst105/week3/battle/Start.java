@@ -22,8 +22,6 @@ public class Start {
 		// This is call to a static method in this class
 		battle();
 
-		// This is call to a static method in another class
-		Arena.endScreen();
 	}
 
 	public static void battle() {
@@ -42,16 +40,14 @@ public class Start {
 		attacks.add(new Attack("round house", "face"));		
 		attacks.add(new Attack("sweep", "leg"));
 		
-		//Munoz: created objects that are yet to be filled 
+		//Munoz: created objects that are yet to be filled with data
 		Monster m1 = new Monster(null, 0);
 		Monster m2 = new Monster(null, 0);
 		
-		//Munoz: if else -- depends on whether the user wants to name monsters or not
+		//Munoz: if, else -- depends on whether the user wants to name monsters or not
 		if(answer1.contentEquals("X")|| answer1.contentEquals("x")) {
 			m1.setName("Godzilla");
 		}
-		// Because each monster is it's own object, they are unique
-		// As such we can change it monster's attributes
 		else {
 			m1.setName(answer1);
 		}
@@ -101,17 +97,16 @@ public class Start {
 			// Also need to convert the double to an int
 			// Notice the () grouping
 			int dmg1 = (int) (Math.random() * 100);
-			int attackRand1 = (int) (Math.random() * 3);
+			
+			//Munoz: Picks a random number in the arraylist and later uses attacks.get(attackRand1)
+			int attackRand1 = (int) (Math.random() * 7);
 					//System.out.println(m1.getName() + attacks.get(attackRand1));
 			System.out.println(m1.getName() + " does " + attacks.get(attackRand1) + " and does " + dmg1 + " points of damage");
 			// Subtract the damage from m2
 			m2.setHp(m2.getHp() - dmg1);
 
-			// m2 does some damage
-			// Lets get how much damage
-			// Also need to convert the double to an int
-			// Notice the () grouping
-			int attackRand2 = (int) (Math.random() * 3);
+			// m2 does some damage -- Lets get how much damage -- Also need to convert the double to an int -- Notice the () grouping
+			int attackRand2 = (int) (Math.random() * 7);
 					//System.out.println(m2.getName() + attacks.get(attackRand2));
 			int dmg2 = (int) (Math.random() * 100);
 			System.out.println(m2.getName() + " does " + attacks.get(attackRand2) + " and does " + dmg2 + " points of damage");
@@ -129,18 +124,23 @@ public class Start {
 
 		// Print out the winner
 		// It is possible BOTH monsters died in the last round
-		// so we need to check who is alive.		
+		// so we need to check who is alive.
+		
+		//Munoz: calling the endScreen here will fix the problem of "someone won" and "everyone died" simultaneous sysouts.
+		if (m1.getHp() > 0 || m2.getHp() > 0) {
 		if (m1.getHp() > 0) {
+			Arena.endScreen();
 			System.out.println(m1.getName() + " WINS!");
 		}
 		
 		else if (m2.getHp() > 0){
+			Arena.endScreen();
 			System.out.println(m2.getName() + " WINS!");
 			}
 
-		
+		}
 		else
-			System.out.println("Both monsters died in battle!");
+			System.out.println("Game is over! Both monsters died in battle!");
 	}
 
 }

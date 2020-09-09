@@ -1,6 +1,8 @@
 package cst105.week3.battle;
 
 public class Attack {
+	
+	//Munoz: added attack class to make class objects for the game to have more detail
 	private String typeOfAttack;
 	private String whereAttacked;
 
@@ -31,7 +33,7 @@ public class Attack {
 
 	@Override
 	public String toString() {
-		return whereAttacked + " " + typeOfAttack;
+		return "a " + typeOfAttack + " to the " + whereAttacked;
 	}
 
 }
